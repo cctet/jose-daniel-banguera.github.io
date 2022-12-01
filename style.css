@@ -1,0 +1,77 @@
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 0%;
+    margin: 0%;
+    height: 100%;
+}
+header{
+    height:  380px;
+    background-color: white;
+    text-align: center;
+    color:rgb(65, 63, 64);
+    font-size: 20px;
+    text-shadow: 3px 4px rgb(234, 35, 32);
+
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(65, 63, 64);
+}
+nav a{
+    color:red;
+    padding: 15px 25px;
+    text-decoration: none;
+    text-align: center;
+}
+nav a .inicio{
+    height: 50px;
+}
+nav a .info{
+    height: 50px;
+}
+nav a .contacto{
+    height: 50px;
+}
+nav a .compra{
+    height: 50px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+aside{
+    flex: 40%;
+    background-color: rgb(234, 35, 32);
+    padding: 20px;
+    height: auto;
+    text-align: center;
+}
+.asideimg{
+    height: 100px;
+}
+.menu{
+    height:  70px;
+}
+section{
+    flex: 60%;
+    background-color: rgb(249, 149, 29);
+    padding: 80px;
+    height: auto;
+    text-align: justify;
+}
+footer{
+    background-color: rgb(65, 63, 64);
+    padding: 50px;
+    text-align: center;
+}
+@media screen and (max-width:700px) {
+    nav, .row{
+        flex-direction: column;
+        text-align:center ;
+    }
+}
